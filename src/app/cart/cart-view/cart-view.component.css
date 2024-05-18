@@ -1,0 +1,26 @@
+.cart-container {
+  border: 1px solid;
+  margin: 50px;
+  text-align: center;
+}
+
+.cart-item {
+  border: 1px dotted;
+}
+
+.total {
+  background-color: darkgray;
+  margin: 0px;
+  padding: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-container button {
+  padding: 15px;
+  margin-left: 20px;
+}

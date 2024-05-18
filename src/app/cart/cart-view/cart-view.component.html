@@ -1,0 +1,16 @@
+<h2>Your Cart</h2>
+
+<div class="cart-container">
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <p>{{ item.name }}</p>
+    Price:
+    <p>{{ item.price | currency : "USD" }}</p>
+  </div>
+
+  <p class="total">Total: {{ totalPrice | currency : "USD" }}</p>
+</div>
+
+<div class="buttons-container">
+  <button (click)="clearCart()">Clear</button>
+  <button (click)="checkOut()">CheckOut</button>
+</div>
