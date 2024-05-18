@@ -1,0 +1,17 @@
+<div class="screen-container">
+  <h2>Gallery</h2>
+
+  <div class="product-container">
+    <div *ngFor="let product of products">
+      <div class="product-card">
+        <img
+          class="productImage"
+          src="assets/images/{{ product.image_url }}"
+          alt="img"
+        />
+        <p>{{ product.name }}</p>
+        <p>{{ product.price | currency : "USD" }}</p>
+      </div>
+    </div>
+  </div>
+</div>

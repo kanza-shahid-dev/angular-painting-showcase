@@ -1,0 +1,24 @@
+.screen-container {
+  padding: 25px;
+}
+
+.product-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  max-width: 200px;
+  border: 1px solid grey;
+  margin: 20px;
+}
+.productImage {
+  width: 100%;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
