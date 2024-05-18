@@ -1,8 +1,16 @@
 <div class="screen-container">
-  <h2>Gallery</h2>
+  <div class="screen-heading">
+    <h2>Gallery</h2>
+
+    <input
+      class="search-bar"
+      (keyup)="applyFilter($event)"
+      placeholder="Search"
+    />
+  </div>
 
   <div class="product-container">
-    <div *ngFor="let product of products">
+    <div *ngFor="let product of filteredProducts">
       <div class="product-card">
         <img
           class="productImage"
